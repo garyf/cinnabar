@@ -1,5 +1,5 @@
 # Cinnabar
-A derivative port of the [Quicksilver](http://code.google.com/p/blacktree-alchemy/) algorithm [scoreForAbbreviation](http://code.google.com/p/blacktree-alchemy/source/browse/trunk/Crucible/Code/NSString_BLTRExtensions.m)
+A derivative port of the [Quicksilver](https://github.com/quicksilver/Quicksilver) algorithm [scoreForAbbreviation](https://github.com/quicksilver/Quicksilver/blob/master/Quicksilver/Code-QuickStepFoundation/NSString_BLTRExtensions.m)
 
 ## Context
 [John Nunemaker](http://railstips.org/) developed a jQuery plugin for [Live Search with Quicksilver Style](http://orderedlist.com/articles/live-search-with-quicksilver-style-for-jquery). As the user constructs a search query, each element of a local or Ajax remote data set receives a **score** in relation to the query text. The jQuery plugin then sorts and filters the results to narrow down the displayed set of items.
@@ -8,11 +8,6 @@ A derivative port of the [Quicksilver](http://code.google.com/p/blacktree-alchem
 As a building block for live search, Cinnabar simply provides a scoring function that gives preference to phrases having words that begin with the query text.
 
 The structure of the `cinnabar` object draws directly from the functional inheritance pattern promoted by [Douglas Crockford](http://www.crockford.com/) in Chapter 5 of [JavaScript: The Good Parts](http://www.amazon.com/exec/obidos/ASIN/0596517742/wrrrldwideweb).
-
-## Usage
-Include this file:
-
-	<script type='text/javascript' src='cinnabar.js'></script>
 
 ## string.score(queryText, precision)
 
@@ -38,7 +33,7 @@ The optional precision parameter controls the number of digits of precision, whi
 * Cinnabar is case sensitive. For case insensitive scoring, preprocess the data set and query text with `string.toLowerCase()`.
 
 ## Testing
-The `test` directory provides a modicum of test cases that depend on the [FireUnit](http://fireunit.org/) Firefox extension for JavaScript unit testing.
+Cinnabar came into existence as part of a Ruby on Rails application. Its Jasmine specs are written in CoffeeScript and served by a mini-Rails app (see `config.ru`). Start the test server manually with `bundle exec rackup -p 3000` and visit `http://localhost:3000/jasmine` to verify that it works. More info about the test setup may be found at the [guard-jasmine](https://github.com/netzpirat/guard-jasmine) GitHub page.
 
 ## Similar work
 * [liquidmetal](http://github.com/rmm5t/liquidmetal/tree/master) by [Ryan McGeary](http://twitter.com/rmm5t)
@@ -48,4 +43,4 @@ The `test` directory provides a modicum of test cases that depend on the [FireUn
 Cinnabar provides the source for Mercury (Quicksilver).
 
 ## Provenance
-Cinnabar was extracted from [Realized](http://newforge-tech.com), an investment portfolio management application under development by [New Forge Technologies](http://newforge-tech.com).
+Cinnabar was extracted from [Realized](http://www.realized-app.com/), an investment portfolio management application under development by [New Forge Technologies](http://newforge-tech.com).
