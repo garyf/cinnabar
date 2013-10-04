@@ -1,0 +1,7 @@
+.rspec
+.rvmrc
+/log/*
+/tmp/*
+/spec/tmp/*
+.DS_Store
+.env

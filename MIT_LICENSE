@@ -1,4 +1,6 @@
-Copyright (c) 2009 New Forge Technologies, LLC
+(The MIT License)
+
+Copyright (c) 2013 Gary Fleshman
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -23,9 +25,9 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 
 This Software a derivative work based on this file
 
-http://code.google.com/p/blacktree-alchemy/source/browse/trunk/Crucible/Code/NSString_BLTRExtensions.m
+https://github.com/quicksilver/Quicksilver/blob/master/Quicksilver/Code-QuickStepFoundation/NSString_BLTRExtensions.m
 
-Copyright 2007 Blacktree, Inc.
+Copyright 2003 Blacktree, Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
