@@ -59,7 +59,6 @@ cinnabar = (phrase, abrv, precision) ->
 
   # detect the largest abrv subset match within the phrase
   o.detect = ->
-    abrvIndex
     while abrvIndex > 0
       abrvSubset = abrv.slice(0, abrvIndex)
       phraseIndex = phrase.indexOf(abrvSubset)
