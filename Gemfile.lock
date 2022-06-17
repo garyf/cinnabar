@@ -36,6 +36,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
+    concurrent-ruby (1.1.10)
     daemons (1.1.9)
     erubis (2.7.0)
     eventmachine (1.0.3)
@@ -55,7 +56,8 @@ GEM
       thor
       tilt
     hike (1.2.3)
-    i18n (0.6.5)
+    i18n (0.9.5)
+      concurrent-ruby (~> 1.0)
     journey (1.0.4)
     jquery-rails (3.0.4)
       railties (>= 3.0, < 5.0)
@@ -121,6 +123,5 @@ DEPENDENCIES
   jasminerice!
   jquery-rails
   railties (~> 3.2)
-  rb-fsevent
   thin
   tzinfo
